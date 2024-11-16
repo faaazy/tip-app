@@ -1,4 +1,4 @@
-# Frontend Mentor - Tip calculator app
+# Frontend Mentor - [Tip calculator app](https://faaazy.github.io/tip-app/)
 
 ![Design preview for the Tip calculator app coding challenge](./design/desktop-preview.jpg)
 

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <h1 class="tip__title">SPLI<br />TTER</h1>
+
+    <div class="container">
+      <form class="tip">
+        <div class="tip__row">
+          <div class="tip__content">
+            <label class="tip__bill">
+              <h2 class="tip__bill-title title-2">Bill</h2>
+              <input type="number" class="tip__bill-input" data-tip-input placeholder="0" />
+            </label>
+
+            <div class="tip__select">
+              <h2 class="tip__select-title title-2">Select tip %</h2>
+              <div class="tip__select-grid">
+                <label class="tip__select-item">
+                  <input type="radio" name="radio" />
+                  <span class="tip__select-btn">5%</span>
+                </label>
+                <label class="tip__select-item">
+                  <input type="radio" name="radio" />
+                  <span class="tip__select-btn">10%</span>
+                </label>
+                <label class="tip__select-item">
+                  <input type="radio" name="radio" />
+                  <span class="tip__select-btn">15%</span>
+                </label>
+                <label class="tip__select-item">
+                  <input type="radio" name="radio" />
+                  <span class="tip__select-btn">25%</span>
+                </label>
+                <label class="tip__select-item">
+                  <input type="radio" name="radio" />
+                  <span class="tip__select-btn">50%</span>
+                </label>
+
+                <label class="tip__select-custom">
+                  <button type="button" class="tip__select-btn" data-tip-select-btn>Custom</button>
+                  <input type="number" class="tip__select-input tip__bill-input hidden" />
+                </label>
+              </div>
+            </div>
+
+            <label class="tip__people">
+              <h2 class="tip__people-title title-2">Number of People</h2>
+              <input type="number" class="tip__people-input tip__bill-input" placeholder="0" data-tip-people />
+            </label>
+          </div>
+          <div class="tip__total-wrapper">
+            <div class="tip__total">
+              <div class="tip__total-item">
+                <div class="tip__total-item__info">
+                  <div class="tip__total-item__title">Tip Amount</div>
+                  <div class="tip__total-item__person">/ person</div>
+                </div>
+                <div class="tip__total-item__number" data-tip-num>$0.00</div>
+              </div>
+              <div class="tip__total-item">
+                <div class="tip__total-item__info">
+                  <div class="tip__total-item__title">Total</div>
+                  <div class="tip__total-item__person">/ person</div>
+                </div>
+                <div class="tip__total-item__number" data-tip-total>$0.00</div>
+              </div>
+              <div class="tip__total-reset">
+                <button type="reset" class="tip__total-reset__btn">RESET</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
